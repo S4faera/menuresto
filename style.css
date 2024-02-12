@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7d071;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrap-title-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .column-2.carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  
+  .plato-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2b2b2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .plato-carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-plato-carta {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-plato-carta img {
+    max-width: 100px;
+    max-height: 75px;
+  }
+  
+  .title-plato-carta {
+    flex-basis: 60%;
+    padding: 20px;
+  }
+  
+  .title-plato-carta h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .title-plato-carta p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .precio-plato-carta {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ffd013;
+    color: #333;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .column-2.carta {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
